@@ -1,0 +1,61 @@
+{
+  "roles": [
+    {
+      "name": "Stop/resume submissions and withdrawal requests",
+      "id": "PAUSE_ROLE",
+      "params": []
+    },
+    {
+      "name": "Set fee",
+      "id": "MANAGE_FEE",
+      "params": []
+    },
+    {
+      "name": "Manage withdrawal credentials",
+      "id": "MANAGE_WITHDRAWAL_KEY",
+      "params": []
+    },
+    {
+      "name": "Set oracle contract address",
+      "id": "SET_ORACLE",
+      "params": []
+    },
+    {
+      "name": "Burn tokens",
+      "id": "BURN_ROLE",
+      "params": [
+        "Account which tokens are to be burnt",
+        "Token amount"
+      ]
+    },
+    {
+      "name": "Set treasury address",
+      "id": "SET_TREASURY",
+      "params": []
+    },
+    {
+      "name": "Set insurance fund address",
+      "id": "SET_INSURANCE_FUND",
+      "params": []
+    }
+  ],
+  "environments": {
+    "default": {
+      "appName": "lido.lidopm.eth",
+      "network": "development"
+    },
+    "rinkeby": {
+      "appName": "lido.lidopm.eth",
+      "network": "rinkeby"
+    },
+    "mainnet-test": {
+      "appName": "lido.lidopm-pre.eth",
+      "network": "mainnet"
+    },
+    "mainnet": {
+      "appName": "lido.lidopm.eth",
+      "network": "mainnet"
+    }
+  },
+  "path": "../../contracts/0.4.24/Lido.sol"
+}

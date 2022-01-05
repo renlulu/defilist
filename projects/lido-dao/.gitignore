@@ -1,0 +1,40 @@
+.idea
+.vscode
+**/build/
+**/node_modules/
+**/artifacts/
+.cache
+**/cache/
+dist/
+tmp/
+
+/coverage/
+/coverage.json
+.coverage_*/
+
+/aragon-apps
+
+**/data/
+*.log
+
+# Yarn stuff
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Geth chaindata
+.chaindata/
+
+# Sensitive data
+/accounts.json
+# e2e temp data
+/deployed-e2e.json
