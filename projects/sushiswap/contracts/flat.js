@@ -11,6 +11,6 @@ files.forEach(file => {
         return;
     }
     console.log(file);
-    const output = execSync('truffle-flattener ' + file + ' >> ' + './flatten/' + file , { encoding: 'utf-8' });
+    const output = execSync('truffle-flattener ' + file + ' >> ' + '../flatten/' + file , { encoding: 'utf-8' });
     console.log('Output was:\n', output);
 })

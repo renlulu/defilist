@@ -7,6 +7,9 @@ const execSync = require('child_process').execSync;
 
 var files = fs.readdirSync('.');
 files.forEach(file => {
+    if (file == 'flat.js') {
+        return;
+    }
     console.log(file);
     const output = execSync('truffle-flattener ' + file + ' >> ' + '../flatten/' + file , { encoding: 'utf-8' });
     console.log('Output was:\n', output);
