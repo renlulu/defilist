@@ -1,0 +1,44 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+logs
+results
+tmp
+
+# Optional npm cache directory
+.npm
+
+#Build
+coverage.json
+coverage
+public/css/main.css
+.nyc_output/*
+
+# API keys and secrets
+.env
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.vscode
+
+# OS metadata
+.DS_Store
+
+#Hardhat files
+cache
+artifacts
+
+.openzeppelin
+flatten
+
